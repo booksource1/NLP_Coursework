@@ -40,9 +40,7 @@ ENV/
 
 # PyTorch
 *.pth
-*.pt
-# Model checkpoints are too large for git, store separately
-BestModel/best_model.pt
+# *.pt files are tracked by Git LFS
 
 # Data files (uncomment if you don't want to track data)
 # *.csv
