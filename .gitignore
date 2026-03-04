@@ -41,7 +41,8 @@ ENV/
 # PyTorch
 *.pth
 *.pt
-!BestModel/best_model.pt
+# Model checkpoints are too large for git, store separately
+BestModel/best_model.pt
 
 # Data files (uncomment if you don't want to track data)
 # *.csv

@@ -10,8 +10,7 @@ nlp_coursework/
     ├── train.py          # Training code
     ├── best_model.pt     # Trained model checkpoint
     ├── dev.txt           # Development set predictions
-    ├── test.txt          # Test set predictions
-    └── results.json      # Training results and metrics
+    └── test.txt          # Test set predictions
 ```
 
 ## BestModel Directory
@@ -37,19 +36,11 @@ All the core files for the best performing model are located in the `BestModel/`
 
 - **`test.txt`**: Predictions for the test set. Each line contains a binary prediction (0 or 1) for the corresponding test sample.
 
-### Results
-
-- **`results.json`**: Contains comprehensive training results including:
-  - Model configuration and method used
-  - Best validation F1 score
-  - Final metrics (F1 macro, F1 positive, F1 negative)
-  - Training history (loss curves, validation metrics across epochs)
 
 ## Model Details
 
 - **Model**: RoBERTa-base
 - **Loss Function**: CrossEntropyLoss with Label Smoothing (0.1)
-- **Best Validation F1 (Macro)**: 0.7897
 - **Training Epochs**: 10
 - **Batch Size**: 32
 - **Max Length**: 128 tokens
@@ -71,5 +62,3 @@ The model achieves the following performance on the validation set:
 - **F1 Macro**: 0.7897
 - **F1 Positive**: 0.6178
 - **F1 Negative**: 0.9616
-
-For detailed training history and metrics, please refer to `BestModel/results.json`.
